@@ -1,11 +1,15 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import colors from '../utils/colors'
-import responsive from '../utils/responsive'
 import ReactCursorPosition from 'react-cursor-position'
+import responsive from '../utils/responsive'
+import ReactGA from 'react-ga'
 import Head from '../meta/Head'
 import About from './About'
 import Contact from './Contact'
+
+ReactGA.initialize('UA-54127697-1')
+ReactGA.pageview(window.location.pathname + window.location.search)
 
 const Wrapper = styled.div`
   width: 100%;

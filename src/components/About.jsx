@@ -9,7 +9,7 @@ import Picture from './Picture.jsx'
 import Link from '../styled-components/Link'
 
 const Paragraph = styled.p`
-  font-family: 'Helvetica';
+  font-family: 'Helvetica, Arial, sans-serif';
   font-size: ${responsive(24, 134, 320, 1280)};
   font-weight: bold;
   line-height: 1.1;
