@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Link from '../styled-components/Link'
+import responsive from '../utils/responsive'
 import data from '../data/contacts'
 
 const ContactTitle = styled.span`
