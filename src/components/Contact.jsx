@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import Link from '../styled-components/Link'
 import responsive from '../utils/responsive'
 import data from '../data/contacts'
+import Fade from 'react-reveal/Fade'
 
 const ContactTitle = styled.span`
   font-family: 'Helvetica';
@@ -46,12 +47,12 @@ const contactItems = data.map(item => (
 ))
 
 const Contact = (props) => (
-  <div>
+  <Fade bottom>
     <ContactTitle>Contact</ContactTitle>
     <ContactList>
       {contactItems}
     </ContactList> 
-  </div>
+  </Fade>
 )
 
 export default Contact
