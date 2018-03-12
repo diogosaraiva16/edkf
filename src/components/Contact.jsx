@@ -5,7 +5,7 @@ import responsive from '../utils/responsive'
 import data from '../data/contacts'
 
 const ContactTitle = styled.span`
-  font-family: 'Helvetica, Arial, sans-serif';
+  font-family: 'Helvetica';
   font-weight: bold;
   font-size: ${responsive(24, 35, 320, 1280)};
   margin-top: 100px;
@@ -20,7 +20,7 @@ const ContactList = styled.ul`
 `
 
 const ListItem = styled.li`
-  font-family: 'Helvetica, Arial, sans-serif';
+  font-family: 'Helvetica';
   font-size: 20px;
   display: inline-block;
   padding: 0;
