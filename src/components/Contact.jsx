@@ -6,7 +6,7 @@ import data from '../data/contacts'
 const ContactTitle = styled.span`
   font-family: 'Helvetica';
   font-weight: bold;
-  font-size: 35px;
+  font-size: ${responsive(24, 35, 320, 1280)};
   margin-top: 100px;
 `
 
