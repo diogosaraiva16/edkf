@@ -16,7 +16,8 @@ const Wrapper = styled.div`
   max-width: 1200px;
   margin: 0 auto;
   padding: ${responsive(20, 150, 320, 1280)} 0 ${responsive(20, 50, 320, 1280)} 0;
-  opacity: 1;
+  opacity: ${props => props.visible ? '1' : '0'};
+  transition: .3s ease;
 `
 
 class App extends Component {
@@ -24,10 +25,19 @@ class App extends Component {
   constructor (props) {
     super(props)
     this.state = {
+      isLoaded: false,
       isInverted: false,
       color: colors.white,
       backgroundColor: colors.black
     }
+  }
+
+  componentDidMount () {
+    setTimeout(() => {
+      this.setState({
+        isLoaded: true
+      })
+    }, 500)
   }
 
   invertColors () {
@@ -50,9 +60,10 @@ class App extends Component {
     return (
       <div style={{color: this.state.color, backgroundColor: this.state.backgroundColor}}>
         <Head/>
-        <Wrapper>
+        <Wrapper visible={this.state.isLoaded} >
           <ReactCursorPosition>
             <About
+              isLoaded={this.state.isLoaded}
               isInverted={this.state.isInverted}
               invertColors={this.invertColors.bind(this)}
               leaveName={this.leaveName.bind(this)}
