@@ -17,7 +17,7 @@ const Wrapper = styled.div`
   margin: 0 auto;
   padding: ${responsive(20, 150, 320, 1280)} 0 ${responsive(20, 50, 320, 1280)} 0;
   opacity: ${props => props.visible ? '1' : '0'};
-  transition: .3s ease;
+  transition: ${props => props.isInverted ? '0' : '.3s ease;'};
 `
 
 class App extends Component {
@@ -60,7 +60,7 @@ class App extends Component {
     return (
       <div style={{color: this.state.color, backgroundColor: this.state.backgroundColor}}>
         <Head/>
-        <Wrapper visible={this.state.isLoaded} >
+        <Wrapper visible={this.state.isLoaded} isInverted={this.state.isInverted}>
           <ReactCursorPosition>
             <About
               isLoaded={this.state.isLoaded}
