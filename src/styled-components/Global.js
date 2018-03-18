@@ -20,7 +20,7 @@ injectGlobal`
   }
   
   @font-face {
-      font-family: 'Helvetica';
+      font-family: 'Helvetica', Arial;
     src: url('/fonts/HelveticaLTStd-Bold.woff2') format('woff2'),
     url('/fonts/HelveticaLTStd-Bold.woff') format('woff');
       font-weight: bold;
