@@ -12,8 +12,7 @@ ReactGA.initialize('UA-54127697-1')
 ReactGA.pageview(window.location.pathname + window.location.search)
 
 const Wrapper = styled.div`
-  width: 100%;
-  max-width: 1200px;
+  width: 95%;
   margin: 0 auto;
   padding: ${responsive(20, 150, 320, 1280)} 0 ${responsive(20, 50, 320, 1280)} 0;
   opacity: ${props => props.visible ? '1' : '0'};

@@ -8,7 +8,7 @@ import Fade from 'react-reveal/Fade'
 const ContactTitle = styled.span`
   font-family: 'Helvetica';
   font-weight: bold;
-  font-size: ${responsive(24, 35, 320, 1280)};
+  font-size: ${responsive(16, 35, 320, 1280)};
   margin-top: 100px;
 `
 
@@ -22,12 +22,12 @@ const ContactList = styled.ul`
 
 const ListItem = styled.li`
   font-family: 'Helvetica';
-  font-size: 20px;
+  font-size: ${responsive(16, 20, 320, 1280)};
   display: inline-block;
   padding: 0;
   margin: 0;
   font-weight: bold;
-  line-height: 2;
+  line-height: 1.5;
 
   &:after {
     content: '/';

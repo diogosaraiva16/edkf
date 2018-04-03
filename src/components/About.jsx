@@ -11,7 +11,7 @@ import Link from '../styled-components/Link'
 
 const Paragraph = styled.p`
   font-family: 'Helvetica';
-  font-size: ${responsive(24, 134, 320, 1280)};
+  font-size: ${responsive(20, 134, 320, 1280)};
   font-weight: bold;
   line-height: 1.1;
   letter-spacing: ${responsive(0, -2, 320, 1280)};
