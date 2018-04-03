@@ -13,6 +13,7 @@ ReactGA.pageview(window.location.pathname + window.location.search)
 
 const Wrapper = styled.div`
   width: 95%;
+  min-height: 100vh;
   margin: 0 auto;
   padding: ${responsive(20, 150, 320, 1280)} 0 ${responsive(20, 50, 320, 1280)} 0;
   opacity: ${props => props.visible ? '1' : '0'};
