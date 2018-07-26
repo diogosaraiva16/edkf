@@ -26,7 +26,7 @@ class About extends Component {
   render() {
     return (
       <div style={{position: 'relative'}}>
-         <Paragraph>Hi, my name is <Name onMouseMove={this.props.invertColors} onMouseLeave={this.props.leaveName} />. I'm a designer & developer who is in love with the intersection between design and technology.</Paragraph>
+         <Paragraph>Oi, my name is <Name onMouseMove={this.props.invertColors} onMouseLeave={this.props.leaveName} />. I'm a designer & developer who is in love with the intersection between design and technology.</Paragraph>
         <Fade bottom>
           <Paragraph>At the moment, <br/> I’m working as a Designer at <Link href="https://descomplica.com.br/" target="_blank" rel="noopener noreferrer">Descomplica</Link>.</Paragraph>
         </Fade>
